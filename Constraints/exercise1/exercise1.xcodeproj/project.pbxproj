@@ -13,8 +13,8 @@
 		E20F311E26A9D53A0044F22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20F311C26A9D53A0044F22C /* Main.storyboard */; };
 		E20F312026A9D53B0044F22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20F311F26A9D53B0044F22C /* Assets.xcassets */; };
 		E20F312326A9D53B0044F22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20F312126A9D53B0044F22C /* LaunchScreen.storyboard */; };
-		E20F312E26A9D53C0044F22C /* exercise1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F312D26A9D53C0044F22C /* exercise1Tests.swift */; };
-		E20F313926A9D53C0044F22C /* exercise1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F313826A9D53C0044F22C /* exercise1UITests.swift */; };
+		E20F312E26A9D53C0044F22C /* Exercise1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F312D26A9D53C0044F22C /* Exercise1Tests.swift */; };
+		E20F313926A9D53C0044F22C /* Exercise1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F313826A9D53C0044F22C /* Exercise1UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +44,10 @@
 		E20F312226A9D53B0044F22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20F312426A9D53B0044F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20F312926A9D53C0044F22C /* exercise1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercise1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E20F312D26A9D53C0044F22C /* exercise1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise1Tests.swift; sourceTree = "<group>"; };
+		E20F312D26A9D53C0044F22C /* Exercise1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1Tests.swift; sourceTree = "<group>"; };
 		E20F312F26A9D53C0044F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20F313426A9D53C0044F22C /* exercise1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercise1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E20F313826A9D53C0044F22C /* exercise1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise1UITests.swift; sourceTree = "<group>"; };
+		E20F313826A9D53C0044F22C /* Exercise1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise1UITests.swift; sourceTree = "<group>"; };
 		E20F313A26A9D53C0044F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 		E20F312C26A9D53C0044F22C /* exercise1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E20F312D26A9D53C0044F22C /* exercise1Tests.swift */,
+				E20F312D26A9D53C0044F22C /* Exercise1Tests.swift */,
 				E20F312F26A9D53C0044F22C /* Info.plist */,
 			);
 			path = exercise1Tests;
@@ -122,7 +122,7 @@
 		E20F313726A9D53C0044F22C /* exercise1UITests */ = {
 			isa = PBXGroup;
 			children = (
-				E20F313826A9D53C0044F22C /* exercise1UITests.swift */,
+				E20F313826A9D53C0044F22C /* Exercise1UITests.swift */,
 				E20F313A26A9D53C0044F22C /* Info.plist */,
 			);
 			path = exercise1UITests;
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20F312E26A9D53C0044F22C /* exercise1Tests.swift in Sources */,
+				E20F312E26A9D53C0044F22C /* Exercise1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E20F313926A9D53C0044F22C /* exercise1UITests.swift in Sources */,
+				E20F313926A9D53C0044F22C /* Exercise1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
