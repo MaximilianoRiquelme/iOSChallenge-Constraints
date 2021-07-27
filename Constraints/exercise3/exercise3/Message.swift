@@ -7,11 +7,9 @@
 
 import Foundation
 
-class Message {
+class Message{
     
-    let username : String = ""
-    let message : String = ""
-    let timeMessage : String = ""
-    
-    
+    var message : String?
+    var username : String?
+    var timeMessage : String?
 }

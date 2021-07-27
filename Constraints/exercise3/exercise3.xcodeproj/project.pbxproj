@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E20F35A326B064980030C458 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F35A226B064980030C458 /* Message.swift */; };
+		E20F35A626B084150030C458 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F35A426B084150030C458 /* MessageTableViewCell.swift */; };
+		E20F35A726B084150030C458 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20F35A526B084150030C458 /* MessageTableViewCell.xib */; };
+		E20F35A926B0972E0030C458 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = E20F35A826B0972E0030C458 /* messages.json */; };
+		E20F35AB26B09E590030C458 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20F35AA26B09E590030C458 /* Message.swift */; };
 		E2459EBD26AF39F7006FF7F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2459EBC26AF39F7006FF7F9 /* AppDelegate.swift */; };
 		E2459EBF26AF39F7006FF7F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2459EBE26AF39F7006FF7F9 /* SceneDelegate.swift */; };
 		E2459EC126AF39F7006FF7F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2459EC026AF39F7006FF7F9 /* ViewController.swift */; };
@@ -36,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E20F35A226B064980030C458 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E20F35A426B084150030C458 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		E20F35A526B084150030C458 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		E20F35A826B0972E0030C458 /* messages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
+		E20F35AA26B09E590030C458 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E2459EB926AF39F7006FF7F9 /* exercise3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2459EBC26AF39F7006FF7F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2459EBE26AF39F7006FF7F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +114,10 @@
 				E2459EC526AF39F9006FF7F9 /* Assets.xcassets */,
 				E2459EC726AF39F9006FF7F9 /* LaunchScreen.storyboard */,
 				E2459ECA26AF39F9006FF7F9 /* Info.plist */,
-				E20F35A226B064980030C458 /* Message.swift */,
+				E20F35A426B084150030C458 /* MessageTableViewCell.swift */,
+				E20F35A526B084150030C458 /* MessageTableViewCell.xib */,
+				E20F35A826B0972E0030C458 /* messages.json */,
+				E20F35AA26B09E590030C458 /* Message.swift */,
 			);
 			path = exercise3;
 			sourceTree = "<group>";
@@ -235,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2459EC926AF39F9006FF7F9 /* LaunchScreen.storyboard in Resources */,
+				E20F35A926B0972E0030C458 /* messages.json in Resources */,
+				E20F35A726B084150030C458 /* MessageTableViewCell.xib in Resources */,
 				E2459EC626AF39F9006FF7F9 /* Assets.xcassets in Resources */,
 				E2459EC426AF39F7006FF7F9 /* Main.storyboard in Resources */,
 			);
@@ -262,7 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2459EC126AF39F7006FF7F9 /* ViewController.swift in Sources */,
-				E20F35A326B064980030C458 /* Message.swift in Sources */,
+				E20F35A626B084150030C458 /* MessageTableViewCell.swift in Sources */,
+				E20F35AB26B09E590030C458 /* Message.swift in Sources */,
 				E2459EBD26AF39F7006FF7F9 /* AppDelegate.swift in Sources */,
 				E2459EBF26AF39F7006FF7F9 /* SceneDelegate.swift in Sources */,
 			);

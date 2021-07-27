@@ -11,14 +11,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var board_tableView: UITableView!
     
-    //let messages = [Message]
+    var messages : [Message]?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let nib = UINib(nibName: "MessageCell", bundle: nil)
+        board_tableView.register(nib, forCellReuseIdentifier: "MessageCell")
         board_tableView.delegate = self
         board_tableView.dataSource = self
+        
+        //Should load from .json file
     }
     
     //Called when a cell is selected
@@ -28,14 +32,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Sets the amount of rows on the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 //ammount of rows
+        return 5 //amount of rows
     }
     
-    //
+    //Loads all cells in order
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sended", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
         
-        //Change the cell somehow.
+        //Change the cell with the proper information
+        cell.backgroundColor = .systemTeal
+        cell.message.text = "hola"
+        cell.username.text = "Fulanito"
+        cell.timeMessage.text = "00:00"
     
         return cell
     }
