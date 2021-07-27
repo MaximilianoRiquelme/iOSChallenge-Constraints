@@ -19,33 +19,52 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4IB-ha-Xw6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4IB-ha-Xw6" secondAttribute="height" multiplier="207:224" id="f3z-nY-28K"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDC-l5-G2H">
                                 <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="dDC-l5-G2H" secondAttribute="height" multiplier="207:224" id="lmF-0y-KDD"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3dV-wM-hnT"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="top" secondItem="4IB-ha-Xw6" secondAttribute="bottom" id="5Hi-1z-17a"/>
-                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Upi-qp-vkl"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Xw9-Do-4Fz"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="top" secondItem="4IB-ha-Xw6" secondAttribute="bottom" id="b1Y-AF-QSs"/>
-                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ej1-4k-w15"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="gU0-lF-vWW"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="kuG-bC-KWj"/>
-                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="mKh-ij-SLM"/>
-                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ppq-rz-sUx"/>
-                            <constraint firstItem="dDC-l5-G2H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uXc-jh-eco"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="40h-c4-tVQ"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="65s-lY-gow"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="7Mn-vR-8XK"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Jb3-AI-6wn"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="afn-TJ-jYM"/>
+                            <constraint firstAttribute="top" secondItem="4IB-ha-Xw6" secondAttribute="top" id="kIB-zT-Dsn">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="u1d-Jr-HFb"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="vet-Fi-g8S">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="65s-lY-gow"/>
+                                <exclude reference="Jb3-AI-6wn"/>
+                                <exclude reference="afn-TJ-jYM"/>
+                                <exclude reference="kIB-zT-Dsn"/>
+                                <exclude reference="40h-c4-tVQ"/>
+                                <exclude reference="7Mn-vR-8XK"/>
+                                <exclude reference="u1d-Jr-HFb"/>
+                                <exclude reference="vet-Fi-g8S"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="65s-lY-gow"/>
+                                <include reference="Jb3-AI-6wn"/>
+                                <include reference="afn-TJ-jYM"/>
+                                <include reference="kIB-zT-Dsn"/>
+                                <include reference="40h-c4-tVQ"/>
+                                <include reference="7Mn-vR-8XK"/>
+                                <include reference="u1d-Jr-HFb"/>
+                                <include reference="vet-Fi-g8S"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
