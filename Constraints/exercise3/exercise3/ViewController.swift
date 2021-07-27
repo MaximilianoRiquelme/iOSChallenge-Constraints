@@ -13,16 +13,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var messages : [Message]?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+        
         let nib = UINib(nibName: "MessageCell", bundle: nil)
         board_tableView.register(nib, forCellReuseIdentifier: "MessageCell")
         board_tableView.delegate = self
         board_tableView.dataSource = self
         
-        //Should load from .json file
+        //Should load from .json file and save on the array
+        
     }
     
     //Called when a cell is selected
@@ -32,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Sets the amount of rows on the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 //amount of rows
+        return 1 //messages!.count //amount of rows
     }
     
     //Loads all cells in order
