@@ -31,11 +31,19 @@
                             <constraint firstItem="dDC-l5-G2H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="40h-c4-tVQ"/>
                             <constraint firstItem="4IB-ha-Xw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="65s-lY-gow"/>
                             <constraint firstItem="dDC-l5-G2H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="7Mn-vR-8XK"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="leading" secondItem="4IB-ha-Xw6" secondAttribute="trailing" id="CXP-Po-qVf"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Frj-V6-yB5"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="GiT-q6-Tbj"/>
                             <constraint firstItem="4IB-ha-Xw6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Jb3-AI-6wn"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Quk-fB-d9y"/>
                             <constraint firstItem="4IB-ha-Xw6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="afn-TJ-jYM"/>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="eBT-7t-uLW"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="efu-Fi-pl1"/>
                             <constraint firstAttribute="top" secondItem="4IB-ha-Xw6" secondAttribute="top" id="kIB-zT-Dsn">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="4IB-ha-Xw6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="msI-gD-yCL"/>
+                            <constraint firstItem="dDC-l5-G2H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nf6-NX-B8n"/>
                             <constraint firstItem="dDC-l5-G2H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="u1d-Jr-HFb"/>
                             <constraint firstItem="dDC-l5-G2H" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="vet-Fi-g8S">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
@@ -44,13 +52,33 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="65s-lY-gow"/>
+                                <exclude reference="Frj-V6-yB5"/>
                                 <exclude reference="Jb3-AI-6wn"/>
+                                <exclude reference="Quk-fB-d9y"/>
                                 <exclude reference="afn-TJ-jYM"/>
+                                <exclude reference="eBT-7t-uLW"/>
                                 <exclude reference="kIB-zT-Dsn"/>
+                                <exclude reference="msI-gD-yCL"/>
                                 <exclude reference="40h-c4-tVQ"/>
                                 <exclude reference="7Mn-vR-8XK"/>
+                                <exclude reference="CXP-Po-qVf"/>
+                                <exclude reference="GiT-q6-Tbj"/>
+                                <exclude reference="efu-Fi-pl1"/>
+                                <exclude reference="nf6-NX-B8n"/>
                                 <exclude reference="u1d-Jr-HFb"/>
                                 <exclude reference="vet-Fi-g8S"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Frj-V6-yB5"/>
+                                <include reference="Quk-fB-d9y"/>
+                                <include reference="eBT-7t-uLW"/>
+                                <include reference="msI-gD-yCL"/>
+                                <include reference="CXP-Po-qVf"/>
+                                <include reference="GiT-q6-Tbj"/>
+                                <include reference="efu-Fi-pl1"/>
+                                <include reference="nf6-NX-B8n"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -69,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-562" y="80"/>
+            <point key="canvasLocation" x="-562.5" y="79.710144927536234"/>
         </scene>
     </scenes>
     <resources>
