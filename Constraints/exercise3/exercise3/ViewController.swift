@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         board_tableView.delegate = self
         board_tableView.dataSource = self
         
+        board_tableView.rowHeight = UITableView.automaticDimension
+        board_tableView.estimatedRowHeight = 300
+        
         parseAndReload()
     }
     
@@ -67,9 +70,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.message.text = msg?.message
         cell.username.text = msg?.username
         cell.timeMessage.text = msg?.timeMessage
-        cell.backgroundColor = .systemTeal
+        cell.selectionStyle = .none
     
         return cell
     }
 }
-

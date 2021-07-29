@@ -9,7 +9,6 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
     
-    @IBOutlet var background: UIView!
     @IBOutlet var message: UILabel!
     @IBOutlet var username: UILabel!
     @IBOutlet var timeMessage: UILabel!
