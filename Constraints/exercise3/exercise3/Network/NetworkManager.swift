@@ -28,6 +28,7 @@ class NetworkManager : Manager {
             guard let jsonMessages = try? JSONDecoder().decode([Message].self, from: jsonData) else {
                 return
             }
+            
             completion(jsonMessages)
         }
         

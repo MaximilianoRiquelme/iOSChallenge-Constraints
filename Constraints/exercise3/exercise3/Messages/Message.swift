@@ -9,7 +9,7 @@ import Foundation
 
 struct Message : Codable {
     
-    let message : String
     let username : String
+    let message : String
     let timeMessage : String
 }

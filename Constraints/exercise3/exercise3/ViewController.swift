@@ -17,8 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        let nib = UINib(nibName: "MessageCell", bundle: nil)
-        board_tableView.register(nib, forCellReuseIdentifier: "MessageCell")
+        let nib = UINib(nibName: "MessageTableViewCell", bundle: nil)
+        board_tableView.register(nib, forCellReuseIdentifier: "MessageTableViewCell")
         board_tableView.delegate = self
         board_tableView.dataSource = self
         
@@ -27,12 +27,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func parseAndReload()
     {
-        
         guard let path = Bundle.main.path(forResource: "messages", ofType: "json") else{
             return
         }
-    
-        guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: "Message")) else{
+        
+        guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path)) else{
             return
         }
         
@@ -60,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Loads all cells in order
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageTableViewCell", for: indexPath) as! MessageTableViewCell
         
         //Change the cell with the proper information
         let msg = messages?[indexPath.row]
