@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Message{
+struct Message : Codable {
     
-    var message : String?
-    var username : String?
-    var timeMessage : String?
+    let message : String
+    let username : String
+    let timeMessage : String
 }

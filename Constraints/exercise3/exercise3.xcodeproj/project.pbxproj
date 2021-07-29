@@ -19,6 +19,7 @@
 		E2459EC926AF39F9006FF7F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2459EC726AF39F9006FF7F9 /* LaunchScreen.storyboard */; };
 		E2459ED426AF39F9006FF7F9 /* exercise3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2459ED326AF39F9006FF7F9 /* exercise3Tests.swift */; };
 		E2459EDF26AF39F9006FF7F9 /* exercise3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2459EDE26AF39F9006FF7F9 /* exercise3UITests.swift */; };
+		E29D5FF526B2EB4E00E52885 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D5FF426B2EB4E00E52885 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E2459EDA26AF39F9006FF7F9 /* exercise3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercise3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2459EDE26AF39F9006FF7F9 /* exercise3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise3UITests.swift; sourceTree = "<group>"; };
 		E2459EE026AF39F9006FF7F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29D5FF426B2EB4E00E52885 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,9 @@
 		E2459EBB26AF39F7006FF7F9 /* exercise3 */ = {
 			isa = PBXGroup;
 			children = (
+				E20F35A826B0972E0030C458 /* messages.json */,
+				E29D5FF326B2E91B00E52885 /* Network */,
+				E2F2CAEA26B1969E001544C4 /* Messages */,
 				E2459EBC26AF39F7006FF7F9 /* AppDelegate.swift */,
 				E2459EBE26AF39F7006FF7F9 /* SceneDelegate.swift */,
 				E2459EC026AF39F7006FF7F9 /* ViewController.swift */,
@@ -114,10 +119,6 @@
 				E2459EC526AF39F9006FF7F9 /* Assets.xcassets */,
 				E2459EC726AF39F9006FF7F9 /* LaunchScreen.storyboard */,
 				E2459ECA26AF39F9006FF7F9 /* Info.plist */,
-				E20F35A426B084150030C458 /* MessageTableViewCell.swift */,
-				E20F35A526B084150030C458 /* MessageTableViewCell.xib */,
-				E20F35A826B0972E0030C458 /* messages.json */,
-				E20F35AA26B09E590030C458 /* Message.swift */,
 			);
 			path = exercise3;
 			sourceTree = "<group>";
@@ -138,6 +139,24 @@
 				E2459EE026AF39F9006FF7F9 /* Info.plist */,
 			);
 			path = exercise3UITests;
+			sourceTree = "<group>";
+		};
+		E29D5FF326B2E91B00E52885 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E29D5FF426B2EB4E00E52885 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2F2CAEA26B1969E001544C4 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E20F35A426B084150030C458 /* MessageTableViewCell.swift */,
+				E20F35A526B084150030C458 /* MessageTableViewCell.xib */,
+				E20F35AA26B09E590030C458 /* Message.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29D5FF526B2EB4E00E52885 /* NetworkManager.swift in Sources */,
 				E2459EC126AF39F7006FF7F9 /* ViewController.swift in Sources */,
 				E20F35A626B084150030C458 /* MessageTableViewCell.swift in Sources */,
 				E20F35AB26B09E590030C458 /* Message.swift in Sources */,

@@ -17,14 +17,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
         let nib = UINib(nibName: "MessageCell", bundle: nil)
         board_tableView.register(nib, forCellReuseIdentifier: "MessageCell")
         board_tableView.delegate = self
         board_tableView.dataSource = self
         
-        //Should load from .json file and save on the array
+        parseAndReload()
+    }
+    
+    func parseAndReload()
+    {
         
+        guard let path = Bundle.main.path(forResource: "messages", ofType: "json") else{
+            return
+        }
+    
+        guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: "Message")) else{
+            return
+        }
+        
+        guard let jsonMessages = try? JSONDecoder().decode([Message].self, from: jsonData) else {
+            return
+        }
+        
+        messages = jsonMessages
+        board_tableView.reloadData()
     }
     
     //Called when a cell is selected
@@ -34,7 +51,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //Sets the amount of rows on the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 //messages!.count //amount of rows
+        guard let rows = messages?.count else {
+            return 0
+        }
+        
+        return rows
     }
     
     //Loads all cells in order
@@ -42,10 +63,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageTableViewCell
         
         //Change the cell with the proper information
+        let msg = messages?[indexPath.row]
+        
+        cell.message.text = msg?.message
+        cell.username.text = msg?.username
+        cell.timeMessage.text = msg?.timeMessage
         cell.backgroundColor = .systemTeal
-        cell.message.text = "hola"
-        cell.username.text = "Fulanito"
-        cell.timeMessage.text = "00:00"
     
         return cell
     }
